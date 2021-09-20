@@ -16,6 +16,11 @@
     background: green;
 }
 
+#principal p {
+    font: 20px verdana;
+    color: white;
+}
+
 #apoio {
     width: 270px;
     float: left;
@@ -23,7 +28,7 @@
 }
 
 #apoio img {
-    padding: 10px;
+    margin: 10px;
     width: 250px;
     height: 170px;
 }
