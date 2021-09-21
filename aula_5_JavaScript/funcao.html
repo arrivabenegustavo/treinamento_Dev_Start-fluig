@@ -9,7 +9,10 @@
     <script>
         // é invocado no botão
         function functionAlteraTexto() {
-            document.getElementById("texto").innerHTML = "Texto alterado"
+            document.getElementById("texto").innerHTML = "Texto alterado";
+        }
+        function muda(){
+            document.getElementById("texto").innerHTML= 'Mudei o nome do select';
         }
     </script>
 </head>
@@ -18,7 +21,12 @@
     <p id="texto">Texto inicial</p>
     <br>
     <!-- Quando o botão(Alterar) for clicado, invoca a função (linha 11)-->
-    <button type="button" onclick="functionAlteraTexto()">Alterar</button>
-    
+    <button type="button" onclick="functionAlteraTexto()">Alterar texto</button>
+    <br>
+    <br>
+    <select onchange="muda();">
+        <option>João</option>
+        <option>Maria</option>
+    </select>
 </body>
 </html>
