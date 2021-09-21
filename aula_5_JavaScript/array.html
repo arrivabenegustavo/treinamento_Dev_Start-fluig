@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalhando com Array</title>
+    </head>
+    <body>
+        <p id="local"></p>
+        <p id="bemVindo"></p>
+
+        <script>
+            var carros = ["Fusca", "Kombi", "Fiat.147"];
+            document.getElementById("local").innerHTML = carros[2];
+
+            var nome = "teste";
+
+            if (nome == "Gustavo") {
+                document.getElementById("bemVindo").innerHTML = "Olá, Gustavo";
+            } else {
+                document.getElementById("bemVindo").innerHTML = "Não é o Gustavo";
+            }
+        </script>
+    </body>
+</html>
+
+<!-- SE o nome for Gustavo, o programa executa IF por ser verdade, SENÃO for , executa o ELSE -->

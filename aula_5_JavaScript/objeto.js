@@ -1,5 +1,6 @@
 function externo(){
 
+    //Objeto
     var pessoa = {
         Nome: 'Gustavo',
         Sobrenome: "Arrivabene",
