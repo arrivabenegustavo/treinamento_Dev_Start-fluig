@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery Append</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#botao1").click(function(){
+                    $("p").append(" <b>texto incluído</b>.");
+                    /* Sempre que o botão1 for clicado, será adicionado o texto ao parágrafo*/
+                });
+
+                $("#botao2").click(function(){
+                    $("ul").append("<li>item incluído</li>");
+                    /* Sempre que o botão2 for clicado, será adicionado um item na lista*/
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1>Fazendo appends de texto e lista</h1>
+
+        <p>this is a paragraph</p> <!-- Isto é um parágrafo-->
+        <p>this is another paragraph</p> <!-- Isto é outro parágrafo-->
+        <p>one more paragraph</p> <!-- Mais um parágrafo-->
+        
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <button id="botao1">Append text</button>
+        <button id="botao2">Append list items</button>
+    </body>
+</html>
