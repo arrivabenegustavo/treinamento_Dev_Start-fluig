@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jquery Hide</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- Consumindo uma API jquery na web-->
+        <script>
+            $(document).ready(function(){
+                $("#bt1").click(function(){
+                    $("#texto").hide(); /* OCULTA*/
+                });
+                $("#bt2").click(function(){
+                    $("#texto").show();/* MOSTRA */
+                })
+            });
+        </script>
+            
+        <style>
+            #principal {
+                
+                text-align: center;
+                padding: 200px;
+            }
+
+            #texto {
+                width: 100%;
+                 
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principal">
+            <h1>Função Hide com botão</h1>
+            <div>
+                <p id="texto">Quando o documento estiver pronto(ready) chamara a função que mostra dois botôes
+                o botão que for clicado chamará outra função que executará (Hide/Oculta) ou (Show/Mostra),
+                porém, para tornar a ação do (show) visível é necessário que o texto seja ocultado(Hide) primeiro</p>
+            </div>
+
+            <button class="cetraliza" id="bt1">Hide</button>
+            <button class="cetraliza" id="bt2">show</button>
+        </div>
+    </body>
+</html>
