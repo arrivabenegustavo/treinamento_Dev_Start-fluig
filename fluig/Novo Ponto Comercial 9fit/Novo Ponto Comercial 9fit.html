@@ -37,12 +37,25 @@
 			<div class="form-group col-md-2">
 				<label for="tipoPonto">Tipo do Ponto</label>
 				<div class="radio"> 
-					<label><input type="radio" name="tipoPonto" id="tipoPonto">Loja</label>
-					<label><input type="radio" name="tipoPonto" id="tipoPonto">Quiosque</label>
+					<label><input type="radio" name="tipoPonto" id="tipoPonto" value="loja">Loja</label>
+					<label><input type="radio" name="tipoPonto" id="tipoPonto" value="quiosque">Quiosque</label>
 				</div>
 			</div>
-		</div>
+			<div class="form-group col-md-4">
+				<label for="diaSemana">Dias de Funcionamento</label>
+				<div class="checkbox">
+					<label><input type="checkbox" name="domingo" id="diaSemana">Dom</label>
+					<label><input type="checkbox" name="segunda" id="diaSemana">Seg</label>
+					<label><input type="checkbox" name="terca" id="diaSemana">Ter</label>
+					<label><input type="checkbox" name="quarta" id="diaSemana">Qua</label>
+					<label><input type="checkbox" name="quinta" id="diaSemana">Qui</label>
+					<label><input type="checkbox" name="sexta" id="diaSemana">Sex</label>
+					<label><input type="checkbox" name="sabado" id="sdiaSemana">Sáb</label>
+				</div>
+			</div>
+		</div>	
 	</form>
+	</div>
 </body>
 <script type="text/javascript">
 	var calendarioDataNasc = FLUIGC.calendar('#dataNascimento');
