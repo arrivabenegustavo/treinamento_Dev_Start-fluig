@@ -8,159 +8,167 @@
 </head>
 <body>
 	<div class="fluig-style-guide">
-	<form name="form" role="form">
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md"></i>Requisitante</h3>
-			</div>
-			<div class="panel-body">
-				<div class="row"> 
-					<div class="form-group col-md-6"> 
-						<label for="nome">Nome</label>
-						<input type="text" name="nome" id="nome" class="form-control" placeholder="Joao da Slva"></input>
-					</div>
-					<div class="form-group col-md-4"> 
-						<label for="email">Email</label>
-						<input type="text" name="email" id="email" class="form-control" placeholder="seuemail@dominio.com"></input>
-					</div>
-					<div class="form-group col-md-2"> 
-						<label for="telefone">Telefone</label>
-						<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(XX) XXXXX-XXXX"></input>
-					</div>
+		<form name="form" role="form">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="fluigicon fluigicon-user icon-md"></i>Requisitante</h3>
 				</div>
-				<div class="row"> 
-					<div class="form-group col-md-2">
-						<label for="telefone">Documento de identidade</label>
-						<input type="text" name="documentoIdentidade" id="documentoIdentidade" class="form-control" placeholder="RG OU CNH"></input>
-					</div>
-					<div class="form-group col-md-2">
-						<label for="telefone">Data de Nascimento</label>
-						<input type="text" name="dataNascimento" id="dataNascimento" class="form-control" placeholder="XX/XX/XXXX"></input>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title"><i class="flaticon flaticon-add-pin icon-md"></i>Ponto Comercial</h3>
-			</div>
-
-			<div class="panel-body">
-				<div class="row"> 
-					<div class="form-group col-md-2">
-						<label for="tipoPonto">Tipo do Ponto</label>
-						<div class="radio"> 
-							<label><input type="radio" name="tipoPonto" id="tipoPonto" value="loja">Loja</label>
-							<label><input type="radio" name="tipoPonto" id="tipoPonto" value="quiosque">Quiosque</label>
+				<div class="panel-body">
+					<div class="row"> 
+						<div class="form-group col-md-6"> 
+							<label for="nome">i18n.translate("nome")</label>
+							<input type="text" name="nome" id="nome" class="form-control" placeholder="Joao da Slva"></input>
+						</div>
+						<div class="form-group col-md-4"> 
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" class="form-control" placeholder="seuemail@dominio.com"></input>
+						</div>
+						<div class="form-group col-md-2"> 
+							<label for="telefone">Telefone</label>
+							<input type="text" name="telefone" id="telefone" class="form-control" placeholder="(XX) XXXXX-XXXX"></input>
 						</div>
 					</div>
-					<div class="form-group col-md-4">
-						<label for="diaSemana">Dias de Funcionamento</label>
-						<div class="checkbox">
-							<label><input type="checkbox" name="domingo" id="diaSemana">Dom</label>
-							<label><input type="checkbox" name="segunda" id="diaSemana">Seg</label>
-							<label><input type="checkbox" name="terca" id="diaSemana">Ter</label>
-							<label><input type="checkbox" name="quarta" id="diaSemana">Qua</label>
-							<label><input type="checkbox" name="quinta" id="diaSemana">Qui</label>
-							<label><input type="checkbox" name="sexta" id="diaSemana">Sex</label>
-							<label><input type="checkbox" name="sabado" id="sdiaSemana">Sáb</label>
+					<div class="row"> 
+						<div class="form-group col-md-2">
+							<label for="telefone">Documento de identidade</label>
+							<input type="text" name="documentoIdentidade" id="documentoIdentidade" class="form-control" placeholder="RG OU CNH"></input>
+						</div>
+						<div class="form-group col-md-2">
+							<label for="telefone">Data de Nascimento</label>
+							<input type="text" name="dataNascimento" id="dataNascimento" class="form-control" placeholder="XX/XX/XXXX"></input>
 						</div>
 					</div>
-				</div>	
-				<div class="row">
-					<div class="form-group col-md-2">
-						<label for="cep">CEP</label>
-						<input type="text" name="cep" id="cep" class="form-control" mask="00000-000">
-					</div>
-					<div class="form-group col-md-3">
-						<label for="logradouro">Logradouro</label>
-						<input type="text" name="logradouro" id="logradouro" class="form-control">
-					</div>
-					<div class="form-group col-md-1">
-						<label for="numero">Número</label>
-						<input type="text" name="numero" id="numero" class="form-control">
-					</div>
-					<div class="form-group col-md-2">
-						<label for="bairro">Bairro</label>
-						<input type="text" name="bairro" id="bairro" class="form-control">	
-					</div>
-					<div class="form-group col-md-2">
-						<label for="cidade">Cidade</label>
-						<input type="text" name="cidade" id="cidade" class="form-control">
-					</div>
-					<div class="form-group col-md-2">
-						<label for="estado">Estado</label>
-						<input type="text" name="estado" id="estado" class="form-control">
-					</div>
-				</div>
-				<div class="row">
-					<div class="form-group col-md-12">
-						<label for="informacoes">Informações Adicionais</label>
-						<textarea name="informacoes" id="informacoes" rows="5" class="form-control"></textarea>
-					</div>
 				</div>
 			</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title">Responsável</h3>
-			</div>
-			<div class="panel-body"> 
-					<table tablename="responsávelTabela" class="table table-hover" addbuttonlabel="Adicionar Responsável" addbuttonclass="btn btn-primary">
-						<thead>
-							<tr>
-								<td>Responsáveis</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<input
-										type="zoom"
-										id = "responsavel"
-										name="responsavel"
-										data-zoom="{
-											'displayKey':'colleagueName',
-											'datasetId':'colleague',
-											'placeholder':'Escolha o usuário',
-											'fields':[
-												{
-												'field':'colleagueId',
-												'label':'ID'
-												},{
-												'field':'colleagueName',
-												'label':'Nome',
-												'standard':'true'
-												},{
-												'field':'login',
-												'label':'Login'
-												}
-											]
-										}"
-									/>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title"><i class="flaticon flaticon-add-pin icon-md"></i>Ponto Comercial</h3>
 				</div>
-				</div>
-			</div>
-		</div>
-		<div class="panel panel-info">
-			<div class="panel-heading">
-				<h3 class="panel-title"><i class="flaticon flaticon-local-atm icon-md"></i>Financeiro</h3>
-			</div>
-			<div class="panel-body">
-				<div class="row"> 
-					<div class="form-group col-md-6">
-						<label for="valor">Valor</label>
-						<input type="number" name="valor" id="name" class="form-control">
+				<div class="panel-body">
+					<div class="row"> 
+						<div class="form-group col-md-2">
+							<label for="tipoPonto">Tipo do Ponto</label>
+							<div class="radio"> 
+								<label><input type="radio" name="tipoPonto" id="tipoPonto" value="loja">Loja</label>
+								<label><input type="radio" name="tipoPonto" id="tipoPonto" value="quiosque">Quiosque</label>
+							</div>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="diaSemana">Dias de Funcionamento</label>
+							<div class="checkbox">
+								<label><input type="checkbox" name="domingo" id="diaSemana">Dom</label>
+								<label><input type="checkbox" name="segunda" id="diaSemana">Seg</label>
+								<label><input type="checkbox" name="terca" id="diaSemana">Ter</label>
+								<label><input type="checkbox" name="quarta" id="diaSemana">Qua</label>
+								<label><input type="checkbox" name="quinta" id="diaSemana">Qui</label>
+								<label><input type="checkbox" name="sexta" id="diaSemana">Sex</label>
+								<label><input type="checkbox" name="sabado" id="sdiaSemana">Sáb</label>
+							</div>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="form-group col-md-2">
+							<label for="cep">CEP</label>
+							<input type="text" name="cep" id="cep" class="form-control" mask="00000-000">
+						</div>
+						<div class="form-group col-md-3">
+							<label for="logradouro">Logradouro</label>
+							<input type="text" name="logradouro" id="logradouro" class="form-control">
+						</div>
+						<div class="form-group col-md-1">
+							<label for="numero">Número</label>
+							<input type="text" name="numero" id="numero" class="form-control">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="bairro">Bairro</label>
+							<input type="text" name="bairro" id="bairro" class="form-control">	
+						</div>
+						<div class="form-group col-md-2">
+							<label for="cidade">Cidade</label>
+							<input type="text" name="cidade" id="cidade" class="form-control">
+						</div>
+						<div class="form-group col-md-2">
+							<label for="estado">Estado</label>
+							<input type="text" name="estado" id="estado" class="form-control">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-12">
+							<label for="informacoes">Informações Adicionais</label>
+							<textarea name="informacoes" id="informacoes" rows="5" class="form-control"></textarea>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-
-	</form>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Responsável</h3>
+				</div>
+				<div class="panel-body"> 
+					<div class="row">
+						<div class="form-group col-md-6">
+							<table tablename="responsávelTabela" class="table table-hover" addbuttonlabel="Adicionar Responsável" addbuttonclass="btn btn-primary">
+								<thead>
+									<tr>
+										<td>Responsáveis</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<input
+												type="zoom"
+												id = "responsavel"
+												name="responsavel"
+												data-zoom="{
+													'displayKey':'colleagueName',
+													'datasetId':'colleague',
+													'placeholder':'Escolha o usuário',
+													'fields':[
+														{
+														'field':'colleagueId',
+														'label':'ID'
+														},{
+														'field':'colleagueName',
+														'label':'Nome',
+														'standard':'true'
+														},{
+														'field':'login',
+														'label':'Login'
+														}
+													]
+												}"
+											/>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Financeiro</h3>
+				</div>
+				<div class="panel-body">
+					<div class="row"> 
+						<div class="form-group col-md-2">
+							<label for="moeda">Moeda</label>
+							<select name="moeda" id="moeda" class="form-control" dataset="dsformMoedasxx" datasetkey="moeda" datasetvalue="simbolo"></select>
+								<!--select / options -> substituído por um Dataset através de um formulário
+								<option value="Real">Real</option>
+								<option value="Dolar">Dolar</option>
+								<option value="Peso">Peso</option> -->
+						</div>
+						<div class="form-group col-md-2">
+							<label for="valor">Valor</label>
+							<input type="number" name="valor" id="valor" class="form-control">
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>	
 	</div>
 </body>
 <SCRIPt type="Text/javascript" src="cep.js"></SCRIPt>
