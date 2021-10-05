@@ -107,7 +107,7 @@
 				<div class="panel-body"> 
 					<div class="row">
 						<div class="form-group col-md-6">
-							<table tablename="responsávelTabela" class="table table-hover" addbuttonlabel="Adicionar Responsável" addbuttonclass="btn btn-primary">
+							<table tablename="responsavelTabela" class="table table-hover" addbuttonlabel="Adicionar Responsável" addbuttonclass="btn btn-primary">
 								<thead>
 									<tr>
 										<td>Responsáveis</td>
@@ -121,20 +121,17 @@
 												id = "responsavel"
 												name="responsavel"
 												data-zoom="{
-													'displayKey':'colleagueName',
-													'datasetId':'colleague',
+													'displayKey':'nome', 
+													'datasetId':'ds9fitResponsaveis',
 													'placeholder':'Escolha o usuário',
 													'fields':[
 														{
-														'field':'colleagueId',
+														'field':'login',
 														'label':'ID'
 														},{
-														'field':'colleagueName',
+														'field':'nome',
 														'label':'Nome',
 														'standard':'true'
-														},{
-														'field':'login',
-														'label':'Login'
 														}
 													]
 												}"
